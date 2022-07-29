@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dictionary</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    </head>
+    
+    <body>
+        <main class="Container">
+            <header>DICTIONARY</header>
+            <form class="formulario" id="formulario" action="">
+
+                <div class="SerchBox">
+                    <input type="text" id="inp_palabra">
+                    <i class="serch"></i>
+                    <span class="material"></span>
+                </div>
+                <p class="info_text">Escriba la palabra que decee buscar</p>
+
+                <div class="SerchInput" id="buscar">
+                    <input type="submit" value="Buscar">
+                </div>
+
+                <div class="content" id="contenido">
+                    <p>meaning /example/</p>
+                    <ul>
+                        <li class="word" id="palabra">
+                            <div class="details">
+                                <p></p>
+                                <span></span>
+                            </div>
+                        </li>
+
+                        <li class="meaning" id="significado">
+                            <div class="details" id="detalles">
+                                <p>Significado</p>
+                                <span></span>
+                            </div>
+                        </li>
+
+                        <li class="example" id="ejemplo">
+                            <div class="details">
+                                <p>Ejemplo</p>
+                                <span></span>
+                            </div>
+                        </li>
+
+                        <li class="synonyms" id="sinonimos">
+                            <div class="details">
+                                <p>Sinónimos</p>
+                                <div class="list"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </main>
+        <script src="./dictionary.js"></script>
+    </body>
+</html>
